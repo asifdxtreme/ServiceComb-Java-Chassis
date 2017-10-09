@@ -11,7 +11,7 @@
     <profile>
       <id>passphrase</id> <!-- give it the name of your project -->
       <properties>
-        <gpg.homedir>/home/travis/build/ServiceComb/ServiceComb-Java-Chassis</gpg.homedir>
+        <gpg.homedir>/home/travis/build/asifdxtreme/ServiceComb-Java-Chassis</gpg.homedir>
         <gpg.keyname>27592CFA</gpg.keyname>
         <gpg.passphrase>${MYPASSP}</gpg.passphrase>
       </properties>
