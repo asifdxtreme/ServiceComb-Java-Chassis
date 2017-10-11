@@ -11,7 +11,7 @@ deploy:
    - tar xvf gpg-sec.tar
    - mvn deploy -DskipTests -Prelease -Ppassphrase --settings .travis.settings.xml
  on:
-  tags: true
+  tags: false
   all_branches: true
 
 env:
