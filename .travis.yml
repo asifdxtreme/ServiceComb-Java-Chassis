@@ -5,12 +5,13 @@ services:
 script:
 - mvn clean
 after_success:
- deploy:
-  provider: script
-  script: "mvn deploy -DskipTests -Prelease -Ppassphrase --settings .travis.settings.xml"
-  on:
-   tags: true
-   all_branches: true
+- 
+deploy:
+ provider: script
+ script: "mvn deploy -DskipTests -Prelease -Ppassphrase --settings .travis.settings.xml"
+ on:
+  tags: true
+  all_branches: true
 
 env:
   global:
