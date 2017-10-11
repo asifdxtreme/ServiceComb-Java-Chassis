@@ -3,9 +3,9 @@ language: java
 services:
 - docker
 script:
-- mvn clean install -Ddocker.showLogs -Pdocker -Pjacoco -Pit -Pcoverage coveralls:report
+- mvn clean
 after_success:
- script: mvn deploy -DskipTests --settings .travis.settings.xml
+ script: "mvn deploy -DskipTests --settings .travis.settings.xml"
  deploy:
   provider: script
   script: 
