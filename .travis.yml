@@ -5,7 +5,6 @@ services:
 script:
 - mvn clean
 after_success:
- script: "mvn deploy -DskipTests --settings .travis.settings.xml"
  deploy:
   provider: script
   script: 
